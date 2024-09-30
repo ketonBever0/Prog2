@@ -9,21 +9,102 @@ using namespace std;
 //Ide dolgozz!!
 
 
-int main() {
+int count_mM() {
 
-  
+  string txt;
+  cin >> txt;
 
-  return 0;
+  int m = 0;
+
+  for (string::iterator it = txt.begin(); it != txt.end(); ++it)
+  {
+    if (*it == 'm' || *it == 'M')
+    {
+      m++;
+    }
+  }
+
+  return m;
 }
+
+string repeater() {
+
+  int count;
+  cin >> count;
+  
+  if (count < 0) return "hiba";
+  
+  string txt;
+  cin >> txt;
+
+  string builder = "";
+
+  for (unsigned i = 0; i < count; i++)
+  {
+    builder += txt;
+  }
+
+  return builder;
+
+}
+
+string multiplier(unsigned num) {
+
+  return to_string(num * 3);
+
+}
+
+int strmin(string str1, string str2) {
+  try
+  {
+    int num1, num2;
+    try
+    {
+      num1 = stoi(str1);
+    }
+    catch(const exception& e)
+    {
+      num1 = NULL;
+    }
+    
+    try
+    {
+      num2 = stoi(str2);
+    }
+    catch(const exception& e)
+    {
+      num2 = NULL;
+    }
+    
+    if (num1 == NULL && num2 == NULL) return -999;
+    
+    if (num1 != NULL && num2 != NULL) {
+      if (num1 > num2) return num2;
+      else return num1;
+    }
+    else if (num1 == NULL) return num2;
+    else if (num2 == NULL) return num1;
+    else return -999;
+    
+    
+    
+  }
+  catch(exception& e)
+  {
+    return -999;
+  }
+  
+}
+
 
 
 ////////////////////////
 
 //=== Teszteles bekapcsolasa kikommentezessel
-//#define TEST_count_mM
-//#define TEST_repeater
-//#define TEST_multiplier
-//#define TEST_strmin
+// #define TEST_count_mM
+// #define TEST_repeater
+// #define TEST_multiplier
+// #define TEST_strmin
 //=== Teszteles bekapcsolas vege
 
 
