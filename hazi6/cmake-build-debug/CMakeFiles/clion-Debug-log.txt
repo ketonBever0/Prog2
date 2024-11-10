@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\Laci\Desktop\progi\Prog2\hazi6 Select CMakeLists.txt
