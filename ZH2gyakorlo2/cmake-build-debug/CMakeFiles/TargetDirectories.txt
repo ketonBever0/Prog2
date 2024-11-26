@@ -1,0 +1,3 @@
+C:/Users/Laci/Desktop/progi/Prog2/ZH2gyakorlo2/cmake-build-debug/CMakeFiles/ZH2gyakorlo2.dir
+C:/Users/Laci/Desktop/progi/Prog2/ZH2gyakorlo2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Laci/Desktop/progi/Prog2/ZH2gyakorlo2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
